@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Menu</title>
+</head>
+<body>
+    <h1>Student Menu</h1>
+    <h3>Welcome, {{ student.get_name() }}</h3>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <p>Please calculate the statistics after entering at least 1 subject<p>
+    <ul>
+        <li><a href="/add_subject">Add Subject</a></li>
+        <li><a href="/delete_subject">Delete Subject</a></li>
+        <li><a href="/calculate_gpa">Calculate GPA</a></li>
+        <li><a href="/calculate_gpa_by_semester">Calculate GPA by Semester</a></li>
+    </ul>
+</body>
+</html>

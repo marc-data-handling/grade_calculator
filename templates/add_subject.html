@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Subject</title>
+</head>
+<body>
+    <h1>Add Subject</h1>
+    <form action="/add_subject" method="POST">
+        <label for="name">Subject Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="grade">Subject Grade:</label>
+        <input type="number" step="0.01" id="grade" name="grade" required><br><br>
+        <label for="credits">Subject Credits:</label>
+        <input type="number" id="credits" name="credits" required><br><br>
+        <label for="mandatory">Is the Subject Mandatory?</label>
+        <select id="mandatory" name="mandatory">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+        <label for="semester">Subject Semester:</label>
+        <input type="number" id="semester" name="semester" required><br><br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate GPA by Semester</title>
+</head>
+<body>
+    <h1>Calculate GPA by Semester</h1>
+    {% for semester, gpa in gpa_by_semester.items() %}
+        <p>Semester {{ semester }} GPA: {{ gpa }}</p>
+    {% endfor %}
+</body>
+</html>
