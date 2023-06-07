@@ -8,24 +8,19 @@ class Subject:
         self._mandatory = bool(mandatory)
         self._semester = int(semester)
 
-    # We implement getter and setter methods to ensure that the attributes of the objects are not modified from outside the class manually
-    @property    
+    # We implement getter and setter methods to ensure that the attributes of the objects are not modified from outside the class manually   
     def get_name(self):
         return self._name
    
-    @property    
     def get_grade(self):
         return self._grade
 
-    @property    
     def get_credits(self):
         return self._credits
     
-    @property    
     def is_mandatory(self):
         return self._mandatory
     
-    @property    
     def get_semester(self):
         return self._semester
 
