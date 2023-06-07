@@ -11,21 +11,18 @@ class Student:
         self._grades = []
        
     # We implement getter and setter methods to ensure that the attributes of the objects are not modified from outside the class manually
-    @property
     def get_name(self):
         return self._name
 
     def set_name(self, name):
         self._name = str(name)
     
-    @property
     def get_credits_needed(self):
         return self._credits_needed
         
     def set_credits_needed(self, credits):
         self._credits_needed = int(credits)
     
-    @property
     def get_grades(self):
         return self._grades
 
